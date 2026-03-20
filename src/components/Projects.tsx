@@ -1,0 +1,140 @@
+import { motion } from 'framer-motion';
+import { ExternalLink, Github } from 'lucide-react';
+import TiltCard from './TiltCard';
+
+const projects = [
+  {
+    title: "Student Performance Dashboard",
+    description: "Created a Power BI dashboard to analyze class marks, highlight top and low performers, and uncover subject-wise trends and insights naturally.",
+    tags: ["Power BI"],
+    image: "https://i.ibb.co/NgtKnHvx/Gemini-Generated-Image-amg1egamg1egamg1.png",
+    liveUrl: null,
+    codeUrl: null
+  },
+  {
+    title: "Digital Health Passport",
+    description: "Led the design of MedPass, a smart digital health passport concept enabling portable medical records for migrant workers securely globally.",
+    tags: ["React", "Node", "Express", "MongoDB"],
+    image: "https://i.ibb.co/VWxSGk2z/Gemini-Generated-Image-os2pihos2pihos2p.png",
+    liveUrl: "#",
+    codeUrl: "#"
+  },
+  {
+    title: "SnapNote",
+    description: "A multimodal AI platform that converts raw content into structured, high-quality academic notes enriched with automated highlighting.",
+    tags: ["React", "Node", "Express", "MongoDB", "OpenAI API", "Tesseract OCR"],
+    image: "/project_3.png",
+    liveUrl: "#",
+    codeUrl: "#"
+  }
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2 }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+};
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-24 relative z-10 w-full flex justify-center px-4 font-sans text-white">
+      <div className="max-w-7xl w-full">
+        <div className="flex flex-col items-center mb-16">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-bold text-center mb-4"
+          >
+            Featured Projects
+          </motion.h2>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"
+          />
+        </div>
+
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+          {projects.map((project, idx) => (
+            <TiltCard key={idx} className="h-full">
+              <motion.div 
+                variants={itemVariants}
+                className="h-full bg-[#111827] border border-slate-800 overflow-hidden rounded-xl hover:border-[rgba(34,211,238,0.6)] hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition-all duration-300 flex flex-col"
+              >
+                <div className="w-full h-48 md:h-52 bg-slate-800">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                </div>
+                
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="text-2xl font-bold mb-4 leading-tight">{project.title}</h3>
+                  <p className="text-gray-400 line-clamp-3 mb-6 flex-grow leading-relaxed text-[15px]">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {project.tags.map(tag => (
+                      <span 
+                        key={tag} 
+                        className="text-xs font-mono text-[#22d3ee] bg-slate-800/60 rounded-full border border-slate-700/50 px-3 py-1.5"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Conditionally Render Action Buttons */}
+                  {(project.liveUrl || project.codeUrl) ? (
+                    <div className="flex gap-4">
+                      {project.liveUrl && (
+                        <motion.a 
+                          href={project.liveUrl}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="px-4 py-2 bg-[#1f2937] border border-slate-700 text-gray-200 text-[13px] font-semibold rounded-lg hover:bg-slate-700 transition-colors flex items-center gap-2"
+                        >
+                          <ExternalLink size={15} />
+                          Live Demo
+                        </motion.a>
+                      )}
+                      {project.codeUrl && (
+                        <motion.a 
+                          href={project.codeUrl}
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="px-4 py-2 bg-transparent text-gray-300 text-[13px] font-semibold rounded-lg hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2"
+                        >
+                          <Github size={15} />
+                          Code
+                        </motion.a>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="h-[38px]"></div> /* Placeholder spacing if buttons are missing to keep card heights aligned decently */
+                  )}
+                </div>
+              </motion.div>
+            </TiltCard>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
