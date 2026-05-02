@@ -74,20 +74,23 @@ const About = () => {
               }}
               className="text-gray-300 text-lg leading-relaxed max-w-xl font-sans"
             >
-              Final-year student (2023-2027) with strong foundations in Data Structures, OOPS, and database-driven application development. Experienced in building full stack and data analytics projects using Java, Python, SQL, and Power BI. Proven team leader in national level hackathons with a focus on scalable, secure, and production-oriented solutions. Seeking an entry-level data-focused role to contribute to high-impact engineering teams.
+              Final-year student with strong expertise in Python and SQL, focused on building scalable data pipelines, backend systems, and analytics solutions. Developed AI-powered applications leveraging LLM and OCR integration to transform unstructured data into actionable insights. Seeking an entry-level AI or data-focused role to design efficient, intelligent data systems and deliver impactful solutions.
             </motion.p>
 
-            <motion.button 
+            <motion.a 
+              href="https://drive.google.com/file/d/1Y7llSbft65RnQHeRTH-vctvbtxbjkYQk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 }
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2.5 bg-gradient-to-r from-[#22d3ee] to-[#a855f7] text-white text-sm font-medium rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-shadow duration-300"
+              className="inline-block px-6 py-2.5 bg-gradient-to-r from-[#22d3ee] to-[#a855f7] text-white text-sm font-medium rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-shadow duration-300"
             >
               View Resume
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>

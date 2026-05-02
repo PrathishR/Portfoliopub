@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import IntroScreen from './components/IntroScreen';
+import Experience from './components/Experience';
 
 function App() {
   const [entered, setEntered] = useState(false);
@@ -30,6 +31,7 @@ function App() {
             <BackgroundParticles />
             <Hero />
             <About />
+            <Experience />
             <Skills />
             <Projects />
             <Achievements />

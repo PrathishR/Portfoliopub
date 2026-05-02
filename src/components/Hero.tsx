@@ -63,7 +63,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-light text-gray-300 text-xl md:text-2xl mb-10"
         >
-          Aspiring Data Engineer
+          Aspiring Data Engineer | Data + AI enthusiast
         </motion.p>
 
         <motion.div 

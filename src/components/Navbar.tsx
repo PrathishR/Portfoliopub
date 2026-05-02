@@ -7,6 +7,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "#", text: "Home" },
     { href: "#about", text: "About" },
+    { href: "#experience", text: "Experience" },
     { href: "#skills", text: "Skills" },
     { href: "#projects", text: "Projects" },
     { href: "#achievements", text: "Achievements" },

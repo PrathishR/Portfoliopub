@@ -7,7 +7,7 @@ const skillCategories = [
   },
   {
     category: "Big Data &\nFrameworks",
-    items: ["PySpark"]
+    items: ["PySpark", "n8n (Workflow Automation)"]
   },
   {
     category: "Databases",
@@ -15,11 +15,11 @@ const skillCategories = [
   },
   {
     category: "Libraries",
-    items: ["Pandas", "NumPy", "Matplotlib", "Seaborn"]
+    items: ["Pandas", "NumPy", "Matplotlib"],
   },
   {
-    category: "BI & Tools",
-    items: ["Power BI", "MS Excel", "Jupyter Notebook"]
+    category: "Visualization & Design",
+    items: ["Power BI", "MS Excel", "Figma"]
   }
 ];
 

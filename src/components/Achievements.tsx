@@ -5,23 +5,23 @@ const achievements = [
     title: "Hackathons",
     subtitle: "Role: Team Lead & Presenter",
     details: [
-      "Participated in 8 national-level hackathons; finalist in 6 events, secured 3rd Prize at GPTathon, CIT, Coimbatore.",
-      "Led problem analysis, solution architecture, and implementation",
-      "Built AI-driven features and database schema; supported frontend integration"
+      "Finalist in 6/8 national-level hackathons; secured 3rd Prize at GPTathon.",
+      "Led team in building AI/data-driven solutions, contributing to backend systems, data pipelines, and LLM-based features"
+    ]
+  },
+  {
+    title: "Tech Community Volunteering",
+    subtitle: "Code on JVM, PEC Hacks",
+    details: [
+      "Active volunteer with Code on JVM and PEC Hacks, contributing to event coordination and technical sessions.",
+      "Led an LLM workshop for 80+ students on ChatGPT architecture, tokenization, and prompt flow"
     ]
   },
   {
     title: "Google Student Ambassador",
     subtitle: "2026",
     details: [
-      "Selected as Google Student Ambassador, participating in Google-led learning and campus community engagement initiatives"
-    ]
-  },
-  {
-    title: "Tech Community Volunteering",
-    subtitle: "Chennai Data Circle, Code on JVM, PEC Hacks",
-    details: [
-      "Active volunteer with Chennai Data Circle (Data community), Code on JVM (Java community), and PEC Hacks, contributing to event coordination, community engagement, and technical sessions"
+      "Selected as Google Student Ambassador (2026), engaged in Google-led learning and campus community initiatives."
     ]
   }
 ];
