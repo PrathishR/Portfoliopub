@@ -78,7 +78,7 @@ const About = () => {
             </motion.p>
 
             <motion.a 
-              href="https://drive.google.com/file/d/1Y7llSbft65RnQHeRTH-vctvbtxbjkYQk/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CALQK-xI27Q8uvTTIEBLwzM4IgC0HFKQ/view"
               target="_blank"
               rel="noopener noreferrer"
               variants={{
