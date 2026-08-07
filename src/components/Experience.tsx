@@ -52,13 +52,19 @@ const Experience = () => {
               <li className="flex gap-4">
                 <span className="text-cyan-400 mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]"></span>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Built backend services and optimized SQL data pipelines for efficient data processing.
+                  Developed frontend and backend modules for web applications, and Designed and integrated RESTful APIs with MySQL databases to enable efficient data storage and retrieval.
                 </p>
               </li>
               <li className="flex gap-4">
                 <span className="text-cyan-400 mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]"></span>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Improved data retrieval performance and ensured data quality using indexing and validation techniques.
+                  Implemented AI-powered features by integrating LLM APIs, enhancing application intelligence and user experience.
+                </p>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-cyan-400 mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.6)]"></span>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Collaborated with the development team to build, and optimize application features.
                 </p>
               </li>
             </ul>

@@ -74,11 +74,11 @@ const About = () => {
               }}
               className="text-gray-300 text-lg leading-relaxed max-w-xl font-sans"
             >
-              Final-year student with strong expertise in Python and SQL, focused on building scalable data pipelines, backend systems, and analytics solutions. Developed AI-powered applications leveraging LLM and OCR integration to transform unstructured data into actionable insights. Seeking an entry-level AI or data-focused role to design efficient, intelligent data systems and deliver impactful solutions.
+              Final-year student passionate about solving real-world problems through technology, with strong analytical and problem-solving skills. Enjoys collaborating with teams and continuously exploring new technologies. Seeking an entry-level Software Engineer, AI Engineer, or Data Engineer role where I can contribute, learn, and grow.
             </motion.p>
 
             <motion.a 
-              href="https://drive.google.com/file/d/1CALQK-xI27Q8uvTTIEBLwzM4IgC0HFKQ/view"
+              href="https://drive.google.com/file/d/1wjepPrStTDAG0j4ugZ6kJgIP3Sh1LnhB/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               variants={{

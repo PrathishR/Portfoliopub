@@ -6,10 +6,10 @@ const projects = [
   {
     title: "Animathix – AI Visual Learning",
     description: [
-      "Built an AI platform converting math queries into animated lessons via LLM-generated Manim scripts.",
-      "Designed an end-to-end pipeline integrating LLM processing, animation rendering, and voice synthesis."
+      "Built an AI platform that transforms math queries into animated lessons using LLM APIs and Manim.",
+      "Developed REST APIs to process user queries and automate animation generation."
     ],
-    tags: ["Python", "Flask", "Manim", "REST APIs", "LLM Integration", "MoviePy"],
+    tags: ["Python", "Flask", "Manim", "REST APIs", "LLM APIs", "MoviePy"],
     image: "https://i.ibb.co/gZ38pGHB/Gemini-Generated-Image-1tkxgq1tkxgq1tkx.png",
     liveUrl: "#",
     codeUrl: "#"
@@ -18,7 +18,7 @@ const projects = [
     title: "SnapNote",
     description: [
       "Built a multimodal AI platform converting unstructured inputs (images, PDFs) into structured notes.",
-      "Integrated OCR and AI-based summarization, reducing manual effort and improving clarity"
+      "Integrated Tesseract OCR and OpenAI API to extract, summarize, and structure text from image and PDF inputs."
     ],
     tags: ["MongoDB", "Express", "React", "Node", "OpenAI API", "Tesseract OCR"],
     image: "/project_3.png",
